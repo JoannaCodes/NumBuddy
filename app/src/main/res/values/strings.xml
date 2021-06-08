@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NumBuddy</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="formulas">Formulas</string>
+    <string name="mini_games">Mini Games</string>
+</resources>
