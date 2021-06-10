@@ -1,3 +1,28 @@
 <resources>
 
+    <string name="hint">Type here!</string>
+    <string name="formula_info">Formula</string>
+
+    <!--Formulas-->
+    <string name="same">multiply value by 1</string>
+    <string name="Km_M">multiply the length value by 1000</string>
+    <string name="Km_Cm">multiply the length value by 100000</string>
+    <string name="M_Km">divide the length value by 1000</string>
+    <string name="M_Cm">multiply the length value by 100</string>
+    <string name="Cm_Km">divide the length value by 100000</string>
+    <string name="Cm_M">divide the length value by 100</string>
+
+    <string name="Kg_G">multiply the length value by 1000</string>
+    <string name="Kg_Mg">multiply the length value by 1e+6</string>
+    <string name="G_Kg">divide the mass value by 1000</string>
+    <string name="G_Mg">multiply the length value by 1000</string>
+    <string name="Mg_Kg">divide the length value by 1e+6</string>
+    <string name="Mg_G">divide the length value by 1000</string>
+
+    <string name="C_F">(0°C × 9/5) + 32 = 32°F</string>
+    <string name="C_K">0°C + 273.15 = 273.15K</string>
+    <string name="F_C">d(0°F − 32) × 5/9 = -17.78°C</string>
+    <string name="F_K">(0°F − 32) × 5/9 + 273.15 = 255.372K</string>
+    <string name="K_C">0K − 273.15 = -273.1°C</string>
+    <string name="K_F">(0K − 273.15) × 9/5 + 32 = -459.7°F</string>
 </resources>
