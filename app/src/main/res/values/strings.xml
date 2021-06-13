@@ -3,4 +3,13 @@
     <string name="unit_converter">Unit Converter</string>
     <string name="formulas">Formulas</string>
     <string name="mini_games">Mini Games</string>
+    <string name="mini_Games">MINI GAMES</string>
+    <string name="easy_button">Easy</string>
+    <string name="medium_button">Medium</string>
+    <string name="hard_button">Hard</string>
+    <string name="questionview">Practice Exercises!</string>
+    <string name="easy_problem1">easyProb</string>
+    <string name="next_easy_question">Next Question</string>
+    <string name="show_easy_answer">Show Answer</string>
+    <string name="sample_logo_game">sample logo</string>
 </resources>
