@@ -12,4 +12,8 @@
     <string name="next_easy_question">Next Question</string>
     <string name="show_easy_answer">Show Answer</string>
     <string name="sample_logo_game">sample logo</string>
+    <string name="geometry">Geometry</string>
+    <string name="trigonometry">Trigonometry</string>
+    <string name="algebra">Algebra</string>
+    <string name="arithmetic">Arithmetic</string>
 </resources>

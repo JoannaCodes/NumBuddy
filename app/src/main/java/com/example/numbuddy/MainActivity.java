@@ -13,14 +13,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button UniCon_Btn, MinGme_Btn;
+        Button UniCon_Btn, MinGme_Btn, Frmla_Btn ;
 
         UniCon_Btn = findViewById(R.id.uniCon_Btn);
         MinGme_Btn = findViewById(R.id.minGme_Btn);
+        Frmla_Btn = findViewById(R.id.formula_Btn);
+
+
+
 
         //transition from main screen to unit conversion screen -- lambda function
         UniCon_Btn.setOnClickListener(v -> openUnitConversion());
         MinGme_Btn.setOnClickListener(v -> openMiniGames());
+        Frmla_Btn.setOnClickListener(v -> openFormula());
 
     }
 
@@ -32,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMiniGames() {
         Intent intent = new Intent( this, MiniGamesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openFormula() {
+        Intent intent = new Intent( this, FormulaActivity.class);
         startActivity(intent);
     }
 }
