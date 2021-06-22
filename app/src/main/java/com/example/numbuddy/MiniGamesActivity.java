@@ -24,7 +24,8 @@ public class MiniGamesActivity extends AppCompatActivity {
     }
 
     public void openEasyGame() {
-        Intent intent = new Intent(this, MiniEasyGamesActivity.class);
+        Intent intent;
+        intent = new Intent(this, MiniEasyGamesActivity.class);
         startActivity(intent);
     }
 
