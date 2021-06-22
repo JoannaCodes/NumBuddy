@@ -19,11 +19,17 @@ public class MiniGamesActivity extends AppCompatActivity {
         MiniHard_Btn = findViewById(R.id.miniHard_Btn);
 
         MiniEasy_Btn.setOnClickListener(v -> openEasyGame());
+        MiniMid_Btn.setOnClickListener(v -> openMediumGame());
 
     }
 
     public void openEasyGame() {
         Intent intent = new Intent(this, MiniEasyGamesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMediumGame() {
+        Intent intent = new Intent(this, MiniMedGamesActivity.class);
         startActivity(intent);
     }
 }
