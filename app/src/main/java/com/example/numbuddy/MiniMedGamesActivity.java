@@ -37,10 +37,10 @@ public class MiniMedGamesActivity extends AppCompatActivity {
     MediumQuestions m02 = new MediumQuestions(R.drawable.problem_medium_2);
     MediumQuestions m03 = new MediumQuestions(R.drawable.problem_medium_3);
     MediumQuestions m04 = new MediumQuestions(R.drawable.problem_medium_4);
-    //MidQuestions m05 = new MidQuestions()
+    MediumQuestions m05 = new MediumQuestions(R.drawable.problem_medium_5);
 
     MediumQuestions[] mquestionsArray = new MediumQuestions[]{
-            m01, m02, m03, m04
+            m01, m02, m03, m04, m05
     };
 
 
