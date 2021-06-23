@@ -7,8 +7,7 @@
     <string name="easy_button">Easy</string>
     <string name="medium_button">Medium</string>
     <string name="hard_button">Hard</string>
-    <string name="questionview">Practice Exercises!</string>
-    <string name="easy_problem1">easyProb</string>
+    <string name="problems">Problems</string>
     <string name="next_easy_question">Next Question</string>
     <string name="show_easy_answer">Show Answer</string>
     <string name="sample_logo_game">sample logo</string>
@@ -16,4 +15,5 @@
     <string name="trigonometry">Trigonometry</string>
     <string name="algebra">Algebra</string>
     <string name="arithmetic">Arithmetic</string>
+    <string name="practice_exercise">Practice Exercise!</string>
 </resources>

@@ -12,7 +12,7 @@
         android:layout_width="292dp"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/questionview"
+        android:text="@string/practice_exercise"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold|italic"
@@ -29,13 +29,14 @@
         android:layout_width="407dp"
         android:layout_height="531dp"
         android:layout_marginTop="84dp"
-        android:contentDescription="@string/easy_problem1"
+        android:contentDescription="@string/problems"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/problem_easy_1" />
 
     <Button
         android:id="@+id/nxtQuest_Btn"
