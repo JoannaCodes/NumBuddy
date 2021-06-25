@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NumBuddy">
+
+        <activity android:name=".TrigoActivity"/>
+
         <activity android:name=".MiniHardGamesActivity" />
+
         <activity android:name=".GeometryActivity" />
         <activity android:name=".FormulaActivity" />
         <activity android:name=".MiniMedGamesActivity" />

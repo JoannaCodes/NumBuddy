@@ -22,11 +22,17 @@ public class FormulaActivity extends AppCompatActivity {
         arithmetic_Btn = findViewById(R.id.Arithmetic_Btn);
 
         geometry_Btn.setOnClickListener(v -> openGeometry());
+        trigonometry_Btn.setOnClickListener(v -> openTrigonometry());
 
     }
 
     public void openGeometry(){
         Intent intent = new Intent(this, GeometryActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTrigonometry(){
+        Intent intent = new Intent(this, TrigoActivity.class);
         startActivity(intent);
     }
 
