@@ -1,7 +1,6 @@
 package com.example.numbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -19,14 +18,17 @@ public class MainActivity extends AppCompatActivity {
         MinGme_Btn = findViewById(R.id.minGme_Btn);
         Frmla_Btn = findViewById(R.id.formula_Btn);
 
-
-
-
         //transition from main screen to unit conversion screen -- lambda function
         UniCon_Btn.setOnClickListener(v -> openUnitConversion());
         MinGme_Btn.setOnClickListener(v -> openMiniGames());
         Frmla_Btn.setOnClickListener(v -> openFormula());
 
+    }
+
+    @Override
+    public void onBackPressed() {
+            super.onBackPressed();
+            finishAffinity();
     }
 
     //activity trigger

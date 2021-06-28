@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Home</string>
+    <string name="nav_unit_converter">Unit Converter</string>
+    <string name="nav_formulas">Formulas</string>
+    <string name="nav_mini_games">Mini Games</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+</resources>

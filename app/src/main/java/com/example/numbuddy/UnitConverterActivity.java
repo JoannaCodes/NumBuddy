@@ -1,16 +1,25 @@
 package com.example.numbuddy;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -24,6 +33,11 @@ public class UnitConverterActivity extends AppCompatActivity {
 
     ArrayList<String> measurement, length, mass, temperature;
 
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
+    ActionBarDrawerToggle toggle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +50,9 @@ public class UnitConverterActivity extends AppCompatActivity {
         output_txt = findViewById(R.id.num_txt2);
         formula_info = findViewById(R.id.formula_info);
         formula_view = findViewById(R.id.formula_view);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.toolbar);
 
         measurement = new ArrayList<>();
         measurement.add("Length");
@@ -168,9 +185,52 @@ public class UnitConverterActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
         });
+
+//======Navigation Drawer======
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
+
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(item -> {
+            int item_selected = item.getItemId();
+
+            if (item_selected == R.id.nav_Home) {
+                Intent home = new Intent(this, MainActivity.class);
+                startActivity(home);
+                drawerLayout.closeDrawers();
+            }else if (item_selected == R.id.nav_UnitConverter) {
+                    drawerLayout.closeDrawers();
+            } else if (item_selected == R.id.nav_Formula) {
+                Intent formula = new Intent(this, FormulaActivity.class);
+                startActivity(formula);
+                drawerLayout.closeDrawers();
+            } else if (item_selected == R.id.nav_MiniGame) {
+                Intent mini_game = new Intent(this, MiniGamesActivity.class);
+                startActivity(mini_game);
+                drawerLayout.closeDrawers();
+            }
+
+            return true;
+        });
     }
 
-//======Methods============================================================================================
+    @Override
+    public void onBackPressed() {
+
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
+
+    //======Methods============================================================================================
     //Computation
     private double Computation(double input) {
         double value = 0;
@@ -306,5 +366,14 @@ public class UnitConverterActivity extends AppCompatActivity {
         }
 
         return value;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
