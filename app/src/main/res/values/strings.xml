@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NumBuddy</string>
     <string name="unit_converter">Unit Converter</string>
+    <string name="title_unit_converter">Unit Converter</string>
     <string name="formulas">Formulas</string>
     <string name="mini_games">Mini Games</string>
     <string name="mini_Games">MINI GAMES</string>
@@ -10,10 +11,11 @@
     <string name="problems">Problems</string>
     <string name="next_easy_question">Next Question</string>
     <string name="show_easy_answer">Show Answer</string>
-    <string name="sample_logo_game">sample logo</string>
+    <string name="title_mini_games">Mini Games</string>
     <string name="geometry">Geometry</string>
     <string name="trigonometry">Trigonometry</string>
     <string name="algebra">Algebra</string>
     <string name="arithmetic">Arithmetic</string>
     <string name="practice_exercise">Practice Exercise!</string>
+    <string name="formula_title">Formula Title</string>
 </resources>
