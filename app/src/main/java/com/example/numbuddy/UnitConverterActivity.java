@@ -203,7 +203,7 @@ public class UnitConverterActivity extends AppCompatActivity {
                 Intent home = new Intent(this, MainActivity.class);
                 startActivity(home);
                 drawerLayout.closeDrawers();
-            }else if (item_selected == R.id.nav_UnitConverter) {
+            } else if (item_selected == R.id.nav_UnitConverter) {
                     drawerLayout.closeDrawers();
             } else if (item_selected == R.id.nav_Formula) {
                 Intent formula = new Intent(this, FormulaActivity.class);
@@ -212,6 +212,10 @@ public class UnitConverterActivity extends AppCompatActivity {
             } else if (item_selected == R.id.nav_MiniGame) {
                 Intent mini_game = new Intent(this, MiniGamesActivity.class);
                 startActivity(mini_game);
+                drawerLayout.closeDrawers();
+            } else if (item_selected == R.id.nav_AboutUs) {
+                Intent about_us = new Intent(this, AboutUsActivity.class);
+                startActivity(about_us);
                 drawerLayout.closeDrawers();
             }
 

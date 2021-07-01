@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    Button UniCon_Btn, MinGme_Btn, Frmla_Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button UniCon_Btn, MinGme_Btn, Frmla_Btn ;
 
         UniCon_Btn = findViewById(R.id.uniCon_Btn);
         MinGme_Btn = findViewById(R.id.minGme_Btn);

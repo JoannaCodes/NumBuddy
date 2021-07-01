@@ -18,4 +18,6 @@
     <string name="arithmetic">Arithmetic</string>
     <string name="practice_exercise">Practice Exercise!</string>
     <string name="formula_title">Formula Title</string>
+    <string name="back_to_home_screen">Back to Home Screen</string>
+    <string name="mcube_logo">Mcube Logo</string>
 </resources>

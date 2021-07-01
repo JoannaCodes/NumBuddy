@@ -54,7 +54,7 @@ public class FormulaActivity extends AppCompatActivity {
                 Intent home = new Intent(this, MainActivity.class);
                 startActivity(home);
                 drawerLayout.closeDrawers();
-            }else if (item_selected == R.id.nav_UnitConverter) {
+            } else if (item_selected == R.id.nav_UnitConverter) {
                     Intent unit_converter = new Intent(this, UnitConverterActivity.class);
                     startActivity(unit_converter);
                     drawerLayout.closeDrawers();
@@ -63,6 +63,10 @@ public class FormulaActivity extends AppCompatActivity {
             } else if (item_selected == R.id.nav_MiniGame) {
                 Intent mini_game = new Intent(this, MiniGamesActivity.class);
                 startActivity(mini_game);
+                drawerLayout.closeDrawers();
+            } else if (item_selected == R.id.nav_AboutUs) {
+                Intent about_us = new Intent(this, AboutUsActivity.class);
+                startActivity(about_us);
                 drawerLayout.closeDrawers();
             }
 

@@ -22,7 +22,6 @@
         android:textAllCaps="false"
         android:textColor="@color/soft_cyan"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
