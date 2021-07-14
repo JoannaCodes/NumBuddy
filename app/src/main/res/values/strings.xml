@@ -20,4 +20,7 @@
     <string name="formula_title">Formula Title</string>
     <string name="back_to_home_screen">Back to Home Screen</string>
     <string name="mcube_logo">Mcube Logo</string>
+    <string name="numbuddy_logo">NumBuddy Logo</string>
+    <string name="mcube">Mcube</string>
+    <string name="numbuddy" />
 </resources>

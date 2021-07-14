@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NumBuddy">
-        <activity android:name=".ArithmeticActivity"></activity>
+        <activity android:name=".ArithmeticActivity" />
         <activity android:name=".AlgebraActivity" />
         <activity android:name=".AboutUsActivity" />
         <activity android:name=".TrigoActivity" />
@@ -20,7 +20,8 @@
         <activity android:name=".MiniEasyGamesActivity" />
         <activity android:name=".MiniGamesActivity" />
         <activity android:name=".UnitConverterActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
