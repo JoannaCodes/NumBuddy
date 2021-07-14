@@ -36,6 +36,9 @@ public class FormulaActivity extends AppCompatActivity {
 
         geometry_Btn.setOnClickListener(v -> openGeometry());
         trigonometry_Btn.setOnClickListener(v -> openTrigonometry());
+        algebra_Btn.setOnClickListener(v -> openAlgebra());
+        arithmetic_Btn.setOnClickListener(v -> openArithmetic());
+
 
         //======Navigation Drawer======
         setSupportActionBar(toolbar);
@@ -95,6 +98,16 @@ public class FormulaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TrigoActivity.class);
         startActivity(intent);
     }
+    public void openAlgebra(){
+        Intent intent = new Intent(this, AlgebraActivity.class);
+        startActivity(intent);
+    }
+
+    public void openArithmetic(){
+        Intent intent = new Intent(this, ArithmeticActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }
