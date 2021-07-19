@@ -27,11 +27,9 @@
 
         <Button
             android:id="@+id/Geometry_Btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="59dp"
-            android:layout_marginEnd="59dp"
-            android:layout_marginBottom="160dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/buttons_layout2"
             android:fontFamily="@font/gelion_black"
             android:text="@string/geometry"
@@ -39,17 +37,16 @@
             android:textColor="@color/soft_cyan"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Trigonometry_Btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.145"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Algebra_Btn" />
+            app:layout_constraintTop_toBottomOf="@+id/Arithmetic_Btn" />
 
         <Button
             android:id="@+id/Trigonometry_Btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginBottom="160dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/buttons_layout2"
             android:fontFamily="@font/gelion_black"
             android:text="@string/trigonometry"
@@ -57,19 +54,16 @@
             android:textColor="@color/soft_cyan"
             android:textSize="19sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Geometry_Btn"
-            app:layout_constraintTop_toBottomOf="@+id/Arithmetic_Btn" />
+            app:layout_constraintHorizontal_bias="0.854"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Algebra_Btn" />
 
         <Button
             android:id="@+id/Algebra_Btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="209dp"
-            android:layout_marginEnd="59dp"
-            android:layout_marginBottom="82dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/buttons_layout2"
             android:fontFamily="@font/gelion_black"
             android:text="@string/algebra"
@@ -77,18 +71,16 @@
             android:textColor="@color/soft_cyan"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/Geometry_Btn"
-            app:layout_constraintEnd_toStartOf="@+id/Arithmetic_Btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/unit_con_title" />
 
         <Button
             android:id="@+id/Arithmetic_Btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="209dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginBottom="82dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/buttons_layout2"
             android:fontFamily="@font/gelion_black"
             android:text="@string/arithmetic"
@@ -96,10 +88,10 @@
             android:textColor="@color/soft_cyan"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/Trigonometry_Btn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Algebra_Btn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unit_con_title" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
