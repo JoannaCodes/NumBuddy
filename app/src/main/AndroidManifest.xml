@@ -28,6 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".easyPopWin"
+            android:theme="@style/AppTheme.CustomTheme"
+            ></activity>
+        <activity android:name=".medPopWin"
+            android:theme="@style/AppTheme.CustomTheme"
+            ></activity>
+        <activity android:name=".hardPopWin"
+            android:theme="@style/AppTheme.CustomTheme"
+            ></activity>
     </application>
 
 </manifest>

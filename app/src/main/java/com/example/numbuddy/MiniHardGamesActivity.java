@@ -2,6 +2,7 @@ package com.example.numbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import java.util.Collections;
 public class MiniHardGamesActivity extends AppCompatActivity {
     private ImageView hImageView;
     private Button hButton;
+    Button showHardQ_Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +22,10 @@ public class MiniHardGamesActivity extends AppCompatActivity {
 
         hImageView = (ImageView) findViewById(R.id.hardprobView);
         hButton = (Button) findViewById((R.id.nxtQuest_Btn3));
+        showHardQ_Btn = (Button) findViewById(R.id.showAns_Btn3);
 
         hButton.setOnClickListener( v -> showRandomHardQuestions());
+        showHardQ_Btn.setOnClickListener(v -> showHardAnswer());
 
         showRandomHardQuestions();
     }
@@ -44,5 +48,12 @@ public class MiniHardGamesActivity extends AppCompatActivity {
 
     public void shuffleHrdQuestions() {
         Collections.shuffle(Arrays.asList(hquestionsArray));
+    }
+
+    //Pop Up Window
+    public void showHardAnswer(){
+        Intent intent = new Intent(this, hardPopWin.class);
+        startActivity(intent);
+
     }
 }
