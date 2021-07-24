@@ -6,7 +6,10 @@
     android:background="@drawable/header"
     android:orientation="vertical"
     android:gravity="bottom"
-    android:padding="16dp">
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingBottom="@dimen/vertical_margin">
 
     <ImageView
         android:layout_width="wrap_content"
