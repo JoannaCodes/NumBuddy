@@ -2,6 +2,7 @@ package com.example.numbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import java.util.Collections;
 public class MiniEasyGamesActivity extends AppCompatActivity {
     private ImageView qImageView;
     private Button qButton;
+    Button show_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +23,11 @@ public class MiniEasyGamesActivity extends AppCompatActivity {
 
         qImageView = (ImageView) findViewById(R.id.easyProbview);
         qButton = (Button)findViewById(R.id.nxtQuest_Btn) ;
+        show_btn = (Button) findViewById(R.id.showAns_Btn);
 
 
         qButton.setOnClickListener(v -> showRandomEasyQuestion());
+        show_btn.setOnClickListener(v -> showAnswer());
 
         showRandomEasyQuestion();
 
@@ -47,5 +51,10 @@ public class MiniEasyGamesActivity extends AppCompatActivity {
 
     public void shuffleEasyQuestions() {
         Collections.shuffle(Arrays.asList(questionsArray));
+    }
+    //Pop Up Window
+    public  void showAnswer(){
+        Intent intent = new Intent(this, easyPopWin.class);
+        startActivity(intent);
     }
 }
