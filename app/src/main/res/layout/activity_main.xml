@@ -13,57 +13,58 @@
 
     <ImageView
         android:id="@+id/app_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="190dp"
+        android:layout_width="256dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="70dp"
         android:contentDescription="@string/numbuddy_logo"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/app_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126">
+        app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
 
     <ImageView
         android:id="@+id/app_title"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/numbuddy"
         android:src="@drawable/app_title"
-        app:tint="@color/dark_gray_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/uniCon_Btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_logo"
-        app:layout_constraintVertical_bias="0.0">
+        app:tint="@color/dark_gray_blue">
 
     </ImageView>
 
     <Button
         android:id="@+id/uniCon_Btn"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/buttons_layout1"
         android:fontFamily="@font/gelion_black"
         android:text="@string/unit_converter"
         android:textAllCaps="false"
         android:textColor="@color/soft_cyan"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/formula_Btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
     <Button
         android:id="@+id/formula_Btn"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/buttons_layout1"
         android:fontFamily="@font/gelion_black"
         android:text="@string/formulas"
@@ -71,18 +72,19 @@
         android:textColor="@color/soft_cyan"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/uniCon_Btn"
+        app:layout_constraintBottom_toTopOf="@+id/minGme_Btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/uniCon_Btn"
-        app:layout_constraintTop_toBottomOf="@+id/uniCon_Btn"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uniCon_Btn" />
 
     <Button
         android:id="@+id/minGme_Btn"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/buttons_layout1"
         android:fontFamily="@font/gelion_black"
         android:text="@string/mini_games"
@@ -90,11 +92,8 @@
         android:textColor="@color/soft_cyan"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/formula_Btn"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/formula_Btn"
-        app:layout_constraintTop_toBottomOf="@+id/formula_Btn"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formula_Btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
