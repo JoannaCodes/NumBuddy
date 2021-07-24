@@ -16,10 +16,9 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="fitStart"
             android:adjustViewBounds="true"
-            android:src="@drawable/algebra"
-            />
+            android:scaleType="fitStart"
+            android:src="@drawable/algebra" />
 
         <ImageView
             android:layout_width="match_parent"
